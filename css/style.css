@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+/* ------------ Nav ------------ */
+
+nav {
+    height: 100px;
+    padding: 0;
+    margin: none;
+}
+
+nav h1 {
+    display: inline-block;
+    padding: 35px 25px 35px 65px;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.main-link {
+    display: inline-block;
+    height: 100%;
+    width: 127px;
+    padding: 40px 25px 40px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    justify-content: flex-end;
+    margin-bottom: -3px;
+    border-top: 3px solid white;
+}
+
+nav ul li:hover {
+    border-top: 3px solid #48a154;
+}
+
+.flex1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex2 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #cae0cd;
+    top: 100px;
+    right: 254px;
+    height: 82px;
+    width: 127px;
+
+}
+
+.drop {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.dropdown ul li {
+    height: 41px;
+    width: 129px;
+    padding: 9px;
+    text-decoration: none;
+    border: none;
+    border-left: 2px solid #cae0cd;
+    margin-left: -2px;
+}
+
+.dropdown ul li:hover {
+    border-left: 2px solid black;
+    border-top: none;
+    background: #8bc893;
+}
+
+.drop:hover .dropdown {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.dropdown:hover {
+     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* ---------- Header ----------*/
+
+.index-header {
+    background-attachment: fixed;
+    background-image: url("../images/tests/mountains.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    padding: 40px;
+
+}
+
+.intro {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-right: 15%;
+    background: white;
+    width: 400px;
+    padding: 35px;
+}
+
+.about-me-header {
+    height: 400px;;
+    background-image: url("../images/tests/mountains-clouds-forest-trees.jpg");
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+
+/* ---------- Body --------- */
+
+.intro-section {
+    background-color: #cae0cd;
+    height: 370px;
+    padding: 150px 200px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.wrap-me-honey {
+    height: 70px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.wrap-me-honey h3 {
+    font-size: 20px;
+}
+
+.intro-section h3 {
+    display: inline-block;
+    width: 7.5%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.intro-section p {
+    display: inline-block;
+    width: 91.5%;
+    height: 100%;
+    border-left: 2px solid #48a154;
+    padding-left: 12.8px;
+    padding-top: 3px;
+}
+
+
+/* ---------- Footer ------- */
+
+footer {
+    height: 100px;
+}
+
+.fname {
+    display: inline-block;
+    height: 100%;
+    padding: 37px 45px 37px 55px
+}
+
+footer ul {
+    display: inline-block;
+    height: 100%;
+}
+
+footer ul li {
+    display: inline-block;
+    height: 100%;
+    padding: 38px 25px;
+}
+
+/* ----------- Resume ------- */
+
+.flex3 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.resume {
+    background: #cae0cd;
+    padding: 30px 50px 30px 50px;
+}
+
+.resume1 {
+    width: 50%;
+}
+
+.resume2 {
+    width: 50%;
+}
+
+.resume1 h4,
+.resume2 h4 {
+    padding-left: 20px;
+}
+
+.resume1 h5,
+.resume2 h5 {
+    padding-left: 40px;
+}
+
+.resume1 p,
+.resume2 p {
+    margin: 30px 0px;
+}
+
+.resume1 .ugly {
+    padding-left: 70px;
+}
+
+.resume1 ul,
+.resume2 ul {
+    padding-left: 60px;
+}
+
+/* -------- About Me --------- */
+
+.about-me-txt {
+    background-color: #cae0cd;
+    height: 800px;
+    padding: 100px 200px;
+}
+
+.about-me-txt p {
+    padding: 10px 0px;
+}
+
+
+/* -------- Portfolio ---------*/
+
+.port {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 200px;
+    background-color: #cae0cd;
+    height: 500px;
+}
+
+.port p:first-child {
+    width: 50%;
+}
+
+.flex4 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 40%;
+    padding: 0 40px;
+}
+
+.web,
+.writing {
+    background: white;
+    width: 400px;
+    height: ;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.web {
+    margin-bottom: 40px;
+}
+
+.writing {
+    margin-top: 40px;
+}
+
+.web div,
+.writing div {
+    width: 75%;
+    padding: 10px;
+}
+
+.web .read-more,
+.writing .read-more {
+    width: 25%;
+    border-left: 2px solid black;
+    padding: 40px 0 40px 8px
+}
+
+.web .read-more:hover,
+.writing .read-more:hover {
+    background: #8bc893;
+}
