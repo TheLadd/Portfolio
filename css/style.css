@@ -122,6 +122,58 @@ nav ul li:hover {
     justify-content: flex-start;
 }
 
+/* This may or may not take the main page's nav */
+
+.main-nav ul {
+    margin-left: 50px;    
+}
+
+.main-nav ul li {
+    border-top: none;
+    width: 150px;
+}
+
+.main-nav .dropdown ul li {
+    width: inherit;
+    font-size: 15px;
+    margin-left: -78px;
+    border-left: none;
+}
+
+.main-nav ul li:hover {
+    border-top: none;
+    font-size: 20px;
+    transition: 0.5s;
+    margin-top: -3px;
+    border-left: none;
+    border-top: none;
+}
+
+.main-nav ul li:hover .dropdown li{
+    
+}
+
+.main-nav .dropdown li:hover {
+    border-left: none;
+    margin-left: -2px;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.main-nav ul li:hover .dropdown {
+    font-size: 15px;
+    font-size: 15px;
+    background: transparent;
+}
+
+.main-nav .dropdown {
+    right: 1132px;
+    display: none;
+    width: inherit;
+    padding-left: 0;
+    
+}
+
 /* ---------- Header ----------*/
 
 .index-header {
@@ -226,7 +278,7 @@ footer ul li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .resume {
@@ -235,11 +287,12 @@ footer ul li {
 }
 
 .resume1 {
-    width: 50%;
+    width: 45%;
+    border-right: 2px solid black;
 }
 
 .resume2 {
-    width: 50%;
+    width: 45%;
 }
 
 .resume1 h4,
@@ -270,7 +323,7 @@ footer ul li {
 
 .about-me-txt {
     background-color: #cae0cd;
-    height: 800px;
+    height: 700px;
     padding: 100px 200px;
 }
 
