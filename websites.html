@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Websites | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="flex1">
@@ -37,8 +38,8 @@
     <div class="flex5">
         <section class="web-page">
             <article>
-                <h3>Climate Change</h3>
-                <p>This website was my first full length website. I collaborated with a school mate, Avery Seabolt, to design it. The project that was assigned to us was to make a website based off of an endangered species. However, I have a passion for environmental issues, so we decided to go with climate change. <br> This site used mostly HTML5 and CSS3, but it also has a small amount of JavaScript. </p>
+                <h3 id="web-head">Climate Change</h3>
+                <p id="web-text">This website was my first full length website. I collaborated with a school mate, Avery Seabolt, to design it. The project that was assigned to us was to make a website based off of an endangered species. However, I have a passion for environmental issues, so we decided to go with climate change. <br> This site used mostly HTML5 and CSS3, but it also has a small amount of JavaScript. </p>
             </article>
             <article>
                 <h3>Digital Ethics</h3>
@@ -50,9 +51,7 @@
             </article>
         </section>
         <section class="slide-show">
-            <img src="images/website-img/climate.PNG" alt="Climate Change Website">
-            <img src="images/website-img/ethics.PNG" alt="Digital Ethics Website">
-            <img src="images/website-img/zen.PNG" alt="Zengarden CSS">
+            <img src="images/website-img/climate.PNG" alt="Climate Change Website" id="oof">
             <form action="#" id="myForm">
                 <input type="button" onclick="countDown(); webCar()"><input type="button" onclick="countUp(); webCar()">
             </form>

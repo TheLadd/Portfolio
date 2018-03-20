@@ -331,6 +331,12 @@ footer ul li {
     padding-left: 60px;
 }
 
+.letters {
+    height: 200px;
+    padding: 30px 50px 30px 50px;
+    background: #efefef;
+}
+
 /* -------- About Me --------- */
 
 .about-me-txt {
@@ -452,6 +458,50 @@ footer ul li {
     background: #cae0cd;
 }
 
+form {
+    margin: 0 41.066%;
+}
+
 form input {
     width: 30px;
 }
+
+/* --------- Writing -------- */
+
+.write {
+    background: #cae0cd;
+
+}
+
+.write section {
+    width: 55%;
+    padding: 100px;
+}
+
+.write section:first-child {
+    width: 40%;
+    display: inline-block;
+    padding: 100px 150px 100px 100px;;
+}
+
+/* --------- Contact -------- */
+
+.contact {
+    background-color: #cae0cd;
+    padding: 100px 100px;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact a {
+    text-decoration: underline;
+}
+
+/* ---------- Footer -------- */
+
+footer {
+
+}
+
