@@ -154,10 +154,6 @@ nav ul li:hover {
     border-top: none;
 }
 
-.main-nav ul li:hover .dropdown li{
-    
-}
-
 .main-nav .dropdown li:hover {
     border-left: none;
     font-size: 17px;
@@ -505,3 +501,38 @@ footer {
 
 }
 
+@media screen and (max-width: 375px) {
+    
+    /* ------- Index ------- */
+    
+    .main-nav ul {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .main-nav .main-link {
+        width: 50%;
+        
+    }
+    
+    .main-nav h1 {
+        padding: 0;
+    }
+    
+    .main-intro {
+        display: none;
+    }
+    
+    .index-header {
+        height: 450px;
+        background-position: top;
+    }
+    
+    .main-nav .drop:hover .dropdown {
+        display: none;
+    }
+    
+    .main-link:hover {
+        font-size: 10px;
+    }
+}
