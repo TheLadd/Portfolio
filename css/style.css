@@ -112,11 +112,11 @@ nav ul li:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+
 }
 
 .dropdown:hover {
-     align-items: flex-start;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -126,7 +126,7 @@ nav ul li:hover {
 /* This may or may not take the main page's nav */
 
 .main-nav ul {
-    margin-left: 50px;    
+    margin-left: 50px;
 }
 
 .main-nav .dropdown {
@@ -185,18 +185,46 @@ nav ul li:hover {
     background-image: url("../images/tests/mountains.jpg");
     background-size: cover;
     background-position: bottom;
-    height: 600px;
+    height: 1000px;
     padding: 40px;
+
+
+}
+
+.for-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex00 {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-right: 5%;
+    width: 400px;
+
 
 }
 
 .intro {
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-right: 15%;
-    background: white;
-    width: 400px;
+    margin-bottom: 99%;
     padding: 35px;
+    width: 400px;
+}
+
+.scroll-button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url(../images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 50% 70%;
+    margin: 0 175px;
 }
 
 .about-me-header {
@@ -206,7 +234,7 @@ nav ul li:hover {
 }
 
 .portfolio {
-    height: 430px;
+    height: 400px;
     background-image: url("../images/tests/montains-long2.jpg");
     background-size: cover;
     background-position: bottom;
@@ -414,12 +442,13 @@ footer ul li {
     transition: 0.2s;
 }
 
-/* --------- Websites -------- */ 
+/* --------- Websites -------- */
 
 .web-page {
     display: inline-block;
     width: 30%;
-    padding: 200px 0 200px 150px;;
+    padding: 200px 0 200px 150px;
+    ;
 }
 
 .slide-show {
@@ -436,7 +465,7 @@ footer ul li {
     display: inline-block;
 }
 
-.slide-show img{
+.slide-show img {
     display: none;
     width: 90%;
 }
@@ -454,11 +483,11 @@ footer ul li {
     background: #cae0cd;
 }
 
-form {
+form.boat {
     margin: 0 41.066%;
 }
 
-form input {
+form.boat input {
     width: 30px;
 }
 
@@ -477,7 +506,8 @@ form input {
 .write section:first-child {
     width: 40%;
     display: inline-block;
-    padding: 100px 150px 100px 100px;;
+    padding: 100px 150px 100px 100px;
+    ;
 }
 
 /* --------- Contact -------- */
@@ -497,42 +527,313 @@ form input {
 
 /* ---------- Footer -------- */
 
-footer {
+footer {}
 
+@media screen and (max-width: 1024px) and (min-width: 375px) {
+    /* ------ Index ------ */
+    .main-nav {
+        height: auto;
+    }
+
+    .main-nav .flex2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 200px;
+    }
+
+    .main-nav h1 {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+        height: 100px;
+        text-align: center;
+    }
+
+    .main-nav ul.flex2 {
+        height: 100px;
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .main-nav .drop:hover .dropdown {
+        display: none;
+    }
+
+    .index-header {
+        height: 685px;
+    }
+
+    .main-intro {
+        margin: 60px 100px 0 440px;
+        margin-top: 60px;
+    }
+
+    .intro-section {
+        padding: 100px 200px;
+        height: 333px;
+    }
+
+    .intro-section h3 {
+        height: 40px;
+        width: 20px;
+        margin: 0;
+        padding: 2px 0 0 0;
+    }
+
+    .intro-section p {
+        height: 133px;
+        width: 95%;
+    }
+
+    /* ----- Footer ---- */
+    footer {
+        height: 100px;
+    }
+
+    footer ul li {
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 375px) {
-    
+
     /* ------- Index ------- */
-    
     .main-nav ul {
         margin: 0;
         width: 100%;
     }
-    
+
     .main-nav .main-link {
         width: 50%;
-        
+
     }
-    
+
     .main-nav h1 {
         padding: 0;
     }
-    
+
     .main-intro {
         display: none;
     }
-    
+
     .index-header {
         height: 450px;
         background-position: top;
     }
-    
+
     .main-nav .drop:hover .dropdown {
         display: none;
     }
-    
-    .main-link:hover {
-        font-size: 10px;
+
+    .main-nav ul li:hover {
+        font-size: 16px;
+    }
+
+    .intro-section {
+        padding: 50px;
+        height: 370px;
+    }
+
+    .intro-section h3 {
+        margin: 0;
+        padding-top: 10px;
+        height: 150xp;
+    }
+
+    .intro-section p {
+        height: 150px;
+        padding-top: 0;
+    }
+
+    /* --------- Nav -------- */
+    .main-link {
+        height: 70px;
+        border-top: none;
+        padding: 20px 15px;
+    }
+
+    nav ul li:hover {
+        border-top: none;
+        font-size: 17px;
+        transition: 0.5s;
+        margin-top: -1px;
+    }
+
+    nav.flex1 {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav {
+        height: 240px;
+    }
+
+    nav h1 {
+        height: 100px;
+        padding-left: 35px;
+    }
+
+    nav ul.flex2 {
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0 auto;
+        width: 254px;
+    }
+
+    nav ul {
+        height: 100px;
+        padding: 0 30px;
+    }
+
+    nav ul li {
+        height: 100px;
+        text-align: center;
+
+    }
+
+
+
+    .drop:hover .dropdown {
+        display: none;
+    }
+
+    /*---------- About Me ------*/
+    .about-me-txt {
+        padding: 35px;
+        height: 2350px
+    }
+
+    .about-me-txt p {
+        padding: 10px;
+        ;
+    }
+
+    /* --------- Portfolio ---- */
+    .portfolio {
+        padding: 0;
+    }
+
+    .port {
+        padding: 0;
+        flex-direction: column;
+        height: 730px;
+        justify-content: flex-start;
+    }
+
+    .port p:first-child {
+        width: 100%;
+        height: 345px;
+        padding: 30px;
+    }
+
+    .port .flex4 {
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    .port .flex4 div.web,
+    .port .flex4 div.writing {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .port .flex4 div.read-more,
+    .port .flex4 div.reas-more {
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    /* --------- Websites ------*/
+    .flex5 {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 600px
+    }
+
+    .web-page {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .slide-show {
+        width: 100%;
+        padding: 10px;
+        ;
+    }
+
+    .slide-show img {
+        width: 100%;
+    }
+
+    /* -------- Writing ------- */
+    .write {
+        height: 900px;
+    }
+
+    .write section:first-child {
+        width: 100%;
+        display: inline-block;
+        padding: 30px;
+    }
+
+    .write section:nth-child(2) {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .write section article p {
+        display: none;
+    }
+
+    .write section article p:first-child {
+        display: block;
+    }
+
+    form {
+        width: 60px;
+        margin: 0 auto;
+    }
+
+    /* --- Contact Me --- */
+    .contact {
+        padding: 30px;
+    }
+
+    /* --------- Footer --------*/
+    .fname {
+        /*
+        width: 100%;
+        height: 74px;
+        font-size: 15px;
+        text-align: center;
+        border-bottom: solid 1px;
+*/
+        display: none;
+    }
+
+    footer .flex1 {
+        flex-direction: row-reverse;
+    }
+
+    footer .flex2 {
+        height: 200px;
+        padding: 0 30px 0 50px;
+    }
+
+
+    footer .flex2 li {
+        height: 100px;
+        width: 130px;
+        text-align: center;
+        padding: 38px 20px;
+    }
+
+    footer .flex2 li:hover {
+        font-size: 17px;
+        transition: 0.5s;
+        margin-top: -1px;
     }
 }

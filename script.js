@@ -12,7 +12,7 @@ function countUp() {
 function countDown() {
     count -= 1;
     if (count < 0) {
-        count = 0
+        count = 0;
     }
 }
 
@@ -49,7 +49,7 @@ function cntUp() {
 function cntDown() {
     cnt -= 1;
     if (cnt < 0) {
-        cnt = 0
+        cnt = 0;
     }
 }
 
@@ -65,4 +65,9 @@ function wriCar() {
         document.getElementById("write-text").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rerum delectus veniam ea, quidem repellat fuga tempore perspiciatis nam eius modi. Id eveniet atque expedita impedit, nisi maxime maiores pariatur!2";
     }
     
+}
+
+function heck() {
+    console.log("prock");
+    return scrollTo(0, 396);
 }
