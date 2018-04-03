@@ -529,7 +529,7 @@ form.boat input {
 
 footer {}
 
-@media screen and (max-width: 1024px) and (min-width: 375px) {
+@media screen and (max-width: 1024px) and (min-width: 481px) {
     /* ------ Index ------ */
     .main-nav {
         height: auto;
@@ -546,7 +546,8 @@ footer {}
         display: block;
         padding: 0;
         margin: 0;
-        height: 100px;
+        margin-top: 20px;
+        height: 70px;
         text-align: center;
     }
 
@@ -561,12 +562,17 @@ footer {}
     }
 
     .index-header {
-        height: 685px;
+        height: 641px;
+        background-position: 0;
     }
 
     .main-intro {
         margin: 60px 100px 0 440px;
         margin-top: 60px;
+    }
+
+    .for-button {
+        display: none;
     }
 
     .intro-section {
@@ -586,6 +592,62 @@ footer {}
         width: 95%;
     }
 
+    /* ---- Portfolio -- */
+    .port {
+        padding: 50px 100px;
+    }
+
+    .port .flex4 {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* 240px */
+    .web,
+    .writing {
+        width: 300px;
+        height: 150px;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .web div {
+        width: 100%;
+        height: 100px;
+    }
+
+    .web div.read-more {
+        height: 50px;
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid black;
+        text-align: center;
+        padding: 11px 0;
+    }
+
+    .writing div {
+        width: 100%;
+        height: 100px;
+    }
+
+    .writing div.read-more {
+        height: 50px;
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid black;
+        text-align: center;
+        padding: 11px 0;
+    }
+
+    /* -- About Me -- */
+    .about-me-txt {
+        height: 1266px;
+    }
+
     /* ----- Footer ---- */
     footer {
         height: 100px;
@@ -596,7 +658,7 @@ footer {}
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
 
     /* ------- Index ------- */
     .main-nav ul {
@@ -611,6 +673,8 @@ footer {}
 
     .main-nav h1 {
         padding: 0;
+        width: 100%;
+        text-align: center;
     }
 
     .main-intro {
@@ -618,8 +682,8 @@ footer {}
     }
 
     .index-header {
-        height: 450px;
-        background-position: top;
+        height: 300px;
+        background-position: 1% 99%;
     }
 
     .main-nav .drop:hover .dropdown {
@@ -628,6 +692,10 @@ footer {}
 
     .main-nav ul li:hover {
         font-size: 16px;
+    }
+
+    .flex00 {
+        display: none;
     }
 
     .intro-section {
@@ -800,6 +868,23 @@ footer {}
     /* --- Contact Me --- */
     .contact {
         padding: 30px;
+    }
+
+    /* --- Resume --- */
+    .resume .flex3 {
+        align-items: none;
+        display: inline-block;
+        flex-direction: none;
+        flex-wrap: none;
+        justify-content: none;
+    }
+
+    .resume1,
+    .resume2 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: none;
     }
 
     /* --------- Footer --------*/
