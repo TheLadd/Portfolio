@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Contact | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -38,9 +40,31 @@
     <section class="contact">
         If you have any queries, contact me through one or more of the following&#58; <br> <br>
         <ul>
-        <li>Email&#58; owenribera@gmail.com</li> <li>Phone Number&#58; +1 &#40;559&#41; 770 &#45; 9943</li> <li>LinkedIn&#58;</li>
-        <li>Instagram&#58; <a href="https://www.instagram.com/the.ladd/?hl=en">@the.Ladd</a></li>
-        </ul>
+            <li>Email&#58; owenribera@gmail.com</li>
+            <li>Phone Number&#58; +1 &#40;559&#41; 770 &#45; 9943</li>
+            <li>LinkedIn&#58;</li>
+            <li>Instagram&#58; <a href="https://www.instagram.com/the.ladd/?hl=en">@the.Ladd</a></li>
+        </ul> <br> <br>
+        
+        If you'd like, you can also contact me through the form below.
+        <form action="" class="contact-box">
+            <div class="flex20">
+                <div>
+                    <label for="first">First Name:</label> <br>
+                    <label for="last">Last Name:</label> <br>
+                    <label for="email_">Email:</label> <br>
+                    <label for="message_">Message:</label> <br>
+                </div>
+                
+                <div>
+                    <input type="text" id="fname" name="first"> <br>
+                    <input type="text" id="lname" name="last"> <br> 
+                    <input type="text" id="email" name="email_"> <br>
+                    <input type="text" id="message" name="message_"> <br>
+                </div>
+            </div>
+            <input type="button" value="Submit" onclick="sub()">
+        </form>
     </section>
     <footer class="flex1">
         <div class="fname">O&nbsp;W&nbsp;E&nbsp;N&nbsp;&nbsp;R&nbsp;I&nbsp;B&nbsp;E&nbsp;R&nbsp;A</div>
@@ -52,4 +76,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

@@ -71,3 +71,19 @@ function heck() {
     console.log("prock");
     return scrollTo(0, 396);
 }
+
+function sub() {
+    if (document.getElementById("fname").value === "") {
+        alert("Please fill in the required fields");
+        return false;
+    } else if (document.getElementById("lname").value === "") {
+        alert("Please fill in the required fields");
+        return false;
+    } else if (document.getElementById("email_").value === "") {
+        alert("Please fill in the required fields");
+        return false;
+    } else if (document.getElementById("message_").value === "") {
+        alert("Please fill in the required fields");
+        return false;
+    }
+}

@@ -525,6 +525,28 @@ form.boat input {
     text-decoration: underline;
 }
 
+.contact-box {
+    width: 350px;;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.flex20 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.flex20 div:first-child {
+    width: 40%;
+}
+
+.flex20 div {
+    width: 60%;
+}
+
 /* ---------- Footer -------- */
 
 footer {}
@@ -789,7 +811,8 @@ footer {}
 
     nav h1 {
         height: 100px;
-        padding-left: 35px;
+        margin: 0 auto;
+        padding: 35px;
     }
 
     nav ul.flex2 {
@@ -797,6 +820,7 @@ footer {}
         padding: 0;
         margin: 0 auto;
         width: 254px;
+        height: 140px;
     }
 
     nav ul {
@@ -819,7 +843,7 @@ footer {}
     /*---------- About Me ------*/
     .about-me-txt {
         padding: 35px;
-        height: 2350px
+        height: auto;
     }
 
     .about-me-txt p {
@@ -918,6 +942,10 @@ footer {}
     /* --- Contact Me --- */
     .contact {
         padding: 30px;
+    }
+    
+    .contact-box {
+        width: 85%;
     }
 
     /* --- Resume --- */
