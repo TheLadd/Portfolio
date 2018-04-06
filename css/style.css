@@ -549,7 +549,11 @@ form.boat input {
 
 /* ---------- Footer -------- */
 
-footer {}
+footer li:hover {
+    background: #8bc893;
+    color: white;
+    transition: 0.2s;
+}
 
 @media screen and (max-width: 1024px) and (min-width: 481px) {
     /* ------ Index ------ */
